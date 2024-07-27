@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Langga,</strong>
+                        <p>
+                            I know how aware you are sa nararamdaman ko, I won’t get tired of telling you how much I like you and reminding you of the joy you bring to my life. Your presence means so much to me and I’m incredibly grateful to have you in my life. I always thank the Lord for giving me the chance to know and care about you. Sorry cause this is all I can give for now, just a simple digital letter but i know how appreciative you are, so never akong mapapagod gumawa ng mga bagay na ganto even if it might seem a bit cringey. Simple appreciation lang sayo cause i know how stressed you are sa school. FIGHTING LANGGA!! 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+
+    <!-- Spotify Music Embed -->
+    <div class="spotify-player">
+        <iframe src="https://open.spotify.com/embed/track/4whLOE7hwNIAykoMcSZmvO?si=245d2e7dd316475e" 
+                width="300" 
+                height="80" 
+                frameborder="0" 
+                allowtransparency="true" 
+                allow="encrypted-media">
+        </iframe>
+    </div>
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
